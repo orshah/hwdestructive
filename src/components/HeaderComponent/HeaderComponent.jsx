@@ -1,0 +1,1 @@
+import "./headerComponent.style.css"
