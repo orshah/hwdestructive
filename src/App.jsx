@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   const showAlert = () => {
-    return alert("Yes, you clicked");
+    return alert("NOW CLICK PICTURES");
   };
   return (
     <>
@@ -31,7 +31,7 @@ function App() {
         </figure>
       </div>
       <ButtonComponent
-        text="CLICK ME"
+        text="CLICK ME OR PICTURES"
         type="btnAlert"
         onClickHandler={showAlert}
       />
