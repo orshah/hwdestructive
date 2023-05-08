@@ -27,7 +27,7 @@ function App() {
         </figure>
         <figure>
           <ImageComponent source={picThree} type="jello" />
-          <figcaption>I am a jello</figcaption>
+          <figcaption>I am a jello(sorry, could not fix it)</figcaption>
         </figure>
       </div>
       <ButtonComponent
