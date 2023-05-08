@@ -1,7 +1,10 @@
 import "./buttonComponent.style.css";
 
-const ButtonComponent = () => {
-  return <button>Text</button>;
+const ButtonComponent = ({ text, type, onClickHandler }) => {
+  return (
+    <button className={`${type}`} onClick={onClickHandler}>
+      {text}
+    </button>
+  );
 };
-
 export default ButtonComponent;

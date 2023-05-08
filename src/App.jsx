@@ -4,13 +4,17 @@ import picTwo from "./components/images/Guardians-of-the-Galaxy-1.jpg";
 import picThree from "./components/images/LOR PIC.jpg";
 
 import ButtonComponent from "./components/ButtonComponent/ButtonComponent";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 
 import "./App.css";
 
 function App() {
+  const showAlert = () => {
+    return alert("Yes, you clicked");
+  };
   return (
     <>
-      <h1>Hello</h1>
+      <HeaderComponent type="header" text="I'm a HEADER" />
       <div className="container">
         <figure>
           <ImageComponent source={picOne} type="jump" />
@@ -26,7 +30,11 @@ function App() {
           <figcaption>I am a jello</figcaption>
         </figure>
       </div>
-      <ButtonComponent />
+      <ButtonComponent
+        text="CLICK ME"
+        type="btnAlert"
+        onClickHandler={showAlert}
+      />
     </>
   );
 }
